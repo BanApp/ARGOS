@@ -50,7 +50,7 @@ while 1:
             if change["operationType"] == "insert":
                 new_data = change["fullDocument"]
 
-                feature_values = [new_data[feature] for feature in features]
+                feature_values = [new_data.get(feature, "nan") for feature in features]
 
                 # Encode the feature values with the appropriate labelEncoder
                 for i in range(len(feature_values)):
