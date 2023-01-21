@@ -36,11 +36,17 @@ features = [
     'Summary'
 ]
 
+# Loading the LabelEncoder object
+LabelE = joblib.load("le.joblib")
+
+# Loading the MinMaxScaler object
+ MinMaxSca = joblib.load("scaler.joblib")
+
 # Create a LabelEncoder object
-le = LabelEncoder()
+le = LabelE
 
 # Create a MinMaxScaler object
-scaler = MinMaxScaler()
+scaler = MinMaxSca
 
 # Set up change stream to listen for new insertions
 while 1:
