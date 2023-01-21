@@ -58,3 +58,9 @@ model.fit(feature_values)
 
 # Save the model to a file
 joblib.dump(model, "model_new.joblib")
+
+# Saving the LabelEncoder object
+joblib.dump(le, "le.joblib")
+
+# Saving the MinMaxScaler object
+joblib.dump(scaler, "scaler.joblib")
