@@ -5,7 +5,7 @@
 
 ### 2. Cilium Hubble 설정 및 Hubble Observe 명령어를 사용해서 MongoDB에 Network Flow 데이터 수집 및 singe layer 데이터로 변환(30s 에 한번씩) //완성(gRPC, Protobuf 추가 공부 필요)
 
-### 3. 수집된 데이터를 Anomaly Detection에 맞게 선별 및 가공 및 Kafka와 MongoDB 연결 // 어느정도 완성(기능적으로 구현은 되나 오버헤드가 있음)
+### 3. 수집된 데이터를 Anomaly Detection에 맞게 선별 및 가공 MongoDB로 연결 및 스트리밍 // 어느정도 완성(기능적으로 동작은 되나 오버헤드가 있음)
 
-### 4. tensorflow lite, ligth ML, caffee2 같은 가벼운 프레임워크로 데이터를 사용해서 실시간 모델 학습(온라인 학습) // 예정
+### 4. tensorflow를 사용해서 네트워크 이상 데이터 실시간 학습 및 판별 가능 // 어느정도 완성(기능적으로 동작은 되나 오버헤드가 있음)
 
