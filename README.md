@@ -9,7 +9,7 @@
 ### 1. 쿠버네티스(k8s) 환경 구성: Master(8g,80g) + worker1(8g,80g) + worker2(8g,80g), CNI: Cilium, Openstack, Ubuntu 22.04 //완성
 
 ### 2. Cilium Hubble 설정 및 Hubble Observe 명령어를 사용해서 MongoDB에 Network Flow 데이터 수집 및 singe layer 데이터로 변환(3s 에 한번씩)
-- 실제로 cilium hubble은 대략 3~4의 네트워크 플로우 데이터를 보여준다. 따라서 3s가 누락되는 데이터 없이 오버헤드가 가장 적다.
+- 실제로 cilium hubble은 대략 3~4초 분량의 네트워크 플로우 데이터를 보여준다. 따라서 3s가 누락되는 데이터 없이 오버헤드가 가장 적다.
 
 ### 3. Cilium Hubble의 Metrics 데이터는 사용하기 불편한점이 존재. 따라서 NetData API로 실시간 ICMP, TCP, UDP 포트의 개수를 REST API로 받는다.
 
