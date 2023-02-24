@@ -11,10 +11,10 @@
 ### 2. Cilium Hubble 설정 및 Hubble Observe 명령어를 사용해서 MongoDB에 Network Flow 데이터 수집 및 singe layer 데이터로 변환(3s 에 한번씩)
 - 실제로 cilium hubble은 대략 3~4의 네트워크 플로우 데이터를 보여준다. 따라서 3s가 누락되는 데이터 없이 오버헤드가 가장 적다.
 
-### 3. Cilium Hubble의 Metrics 데이터는 사용하기 불편한점이 존재. 따라서 NetData API로 실시간 ICMP, TCP, UDP 포트의 개수를 REST API 형태로 받는다.
+### 3. Cilium Hubble의 Metrics 데이터는 사용하기 불편한점이 존재. 따라서 NetData API로 실시간 ICMP, TCP, UDP 포트의 개수를 REST API로 받는다.
 
 ### 4. 수집된 데이터를 Anomaly Detection에 맞게 선별 및 가공 MongoDB로 연결 및 스트리밍
 
-### 5. Tensorflow를 사용해서 네트워크 이상 데이터 비지도학습 및 판별 가능(Isolation Forest, One Class SVM) 
+### 5. Scikit-Learn 사용해서 네트워크 이상 데이터 비지도학습 및 판별 가능(Isolation Forest, One Class SVM, Robust Covariance) 
 
 
