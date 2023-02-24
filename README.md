@@ -1,6 +1,11 @@
 # LAB_Project
 ## 쿠버네티스 환경에서 Cilium Hubble 및 NetData API를 이용한 네트워크 로그 수집 및 이상탐지 모델
 
+<img width="643" alt="스크린샷 2023-02-24 오후 8 24 02" src="https://user-images.githubusercontent.com/93313445/221167832-721669b0-a361-4ce5-ac38-76e33ac85b0a.png">
+
+
+
+
 ### 1. 쿠버네티스(k8s) 환경 구성: Master(8g,80g) + worker1(8g,80g) + worker2(8g,80g), CNI: Cilium, Openstack, Ubuntu 22.04 //완성
 
 ### 2. Cilium Hubble 설정 및 Hubble Observe 명령어를 사용해서 MongoDB에 Network Flow 데이터 수집 및 singe layer 데이터로 변환(3s 에 한번씩)
